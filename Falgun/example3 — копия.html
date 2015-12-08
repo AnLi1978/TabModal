@@ -1,0 +1,214 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Пример#3 используя Falgun template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin Panel Template">
+    <meta name="author" content="Westilian: Kamrujaman Shohel">
+    <!-- styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.gritter.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link href="css/tablecloth.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie/ie7.css" />
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie/ie8.css" />
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie/ie9.css" />
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+    <!--fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <!--============ javascript ===========-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.sparkline.js"></script>
+    <script src="js/bootstrap-fileupload.js"></script>
+    <script src="js/jquery.metadata.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/jquery.tablecloth.js"></script>
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.selection.js"></script>
+    <script src="js/excanvas.js"></script>
+    <script src="js/jquery.flot.pie.js"></script>
+    <script src="js/jquery.flot.stack.js"></script>
+    <script src="js/jquery.flot.time.js"></script>
+    <script src="js/jquery.flot.tooltip.js"></script>
+    <script src="js/jquery.flot.resize.js"></script>
+    <script src="js/jquery.collapsible.js"></script>
+    <script src="js/accordion.nav.js"></script>
+    <script src="js/jquery.gritter.js"></script>
+    <script src="js/tiny_mce/jquery.tinymce.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/ios-orientationchange-fix.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <!--<a class="brand" href="#"><i class="icon-th-list icon-white"></i>   Электронные таблицы</a>-->
+                <ul class="nav">
+                    <li class="divider-vertical"></li>
+                    <li><a href="index.html" title="Вернуться на главную">На главную</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Содержание<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal">H Водород</a></li>
+                            <li><a href="#" data-toggle="modal">Li Литий</a></li>
+                            <li><a href="#" data-toggle="modal">Na Натрий</a></li>
+                            <li><a href="#" data-toggle="modal">K Калий</a></li>
+                            <li><a href="#" data-toggle="modal">Rb Рубидий</a></li>
+                            <li><a href="#" data-toggle="modal">Cs Цезий</a></li>
+                            <li><a href="#" data-toggle="modal">Fr Франций</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="switch-board gray">
+                    <ul class="clearfix switch-item">
+                        <li><a href="../index.html" class=" blue"><i class="icon-copy"></i><span>Главная</span></a></li>
+                        <li><a href="../example3.html" class=" dark-yellow"><i class="icon-file-alt"></i><span>Таблицы</span></a></li>
+                        <li><span class="notify-tip">30</span><a href="#" class="brown"><i class="icon-user"></i><span>Пользователи</span></a></li>
+                        <li><a href="#" class="orange"><i class="icon-cogs"></i><span>Настройки</span></a></li>
+                        <li><a href="#" class=" blue-violate"><i class="icon-lightbulb"></i><span>Поддержка</span></a></li>
+                        <li><a href="#" class=" magenta"><i class="icon-bar-chart"></i><span>Статистика</span></a></li>
+                        <li><a href="#" class="green"><i class="icon-shopping-cart"></i><span>Приказы</span></a></li>
+                        <li><a href="#" class=" bondi-blue"><i class="icon-time"></i><span>События</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tabbable">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#panel1">Виды ЭТ</a></li>
+                <li><a data-toggle="tab" href="#panel2">MS Excel и его версии</a></li>
+                <li><a data-toggle="tab" href="#panel3">Панель 3</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="panel1" class="tab-pane active">
+                    <h3>Виды электронных таблиц (ЭТ)</h3>
+                    <p> Электронные таблицы (ЭТ) представляют собой удобный инструмент для автоматизации вычислений.
+                        Многие расчёты, в частности в области бухгалтерского учёта, выполняются в табличной форме:
+                        балансы, расчётные ведомости, сметы расходов и т. п. Кроме того, решение численными методами целого
+                        ряда математических задач удобно выполнять именно в табличной форме. Использование математических
+                        формул в электронных таблицах позволяет представить взаимосвязь между различными параметрами
+                        некоторой реальной системы. Решения многих вычислительных задач, которые раньше можно было
+                        осуществить только с помощью программирования, стало возможно реализовать через математическое
+                        моделирование в электронной таблице.
+                    </p>
+                    <h5>Перечень программных продуктов</h5>
+                    <div class="table-responsive">
+                        <table class="table table-dark">
+                            <thead>
+                            <tr>
+                                <th>Наименование ЭТ</th>
+                                <th>UNIX</th>
+                                <th>Mac Os</th>
+                                <th>MS Windows</th>
+                                <th>Примечание</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>GNumeric</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>Включена в пакет GNOME Office</td>
+                            </tr>
+                            <tr>
+                                <td>KSpread</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>Включена в состав KOffice</td>
+                            </tr>
+                            <tr>
+                                <td>Lotus 1-2-3</td>
+                                <td>False</td>
+                                <td>False</td>
+                                <td>True</td>
+                                <td>Впервые выпущена 29.01.1983 под DOS</td>
+                            </tr>
+                            <tr>
+                                <td>Microsoft Excel</td>
+                                <td>False</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>Впервые выпущена в 1985 году под DOS</td>
+                            </tr>
+                            <tr>
+                                <td>Numbers</td>
+                                <td>False</td>
+                                <td>True</td>
+                                <td>False</td>
+                                <td>Входит в состав iWork</td>
+                            </tr>
+                            <tr>
+                                <td>LibreOffice Calc </td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>Входит в состав LibreOffice</td>
+                            </tr>
+                            <tr>
+                                <td>OpenOffice Calc </td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>True</td>
+                                <td>Входит в состав OpenOffice</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="panel2" class="tab-pane">
+                    <h3>MS Excel и его версии</h3>
+                    <p>
+                        программа для работы с электронными таблицами, созданная корпорацией Microsoft для
+                        Microsoft Windows, Windows NT и Mac OS. Она предоставляет возможности экономико-статистических
+                        расчетов, графические инструменты и, за исключением Excel 2008 под Mac OS X, язык
+                        макропрограммирования VBA (Visual Basic for Application). Microsoft Excel входит в состав
+                        Microsoft Office и на сегодняшний день Excel является одним из наиболее популярных
+                        приложений в мире.
+                    </p>
+                </div>
+                <div id="panel3" class="tab-pane">
+                    <h3>Панель 3</h3>
+                    <p>Содержимое 3 панели...</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <a href="../index.html"><button type="submit" class="btn btn-round" title="На главную"><span><i class="icon-home"></i></span> </button></a>
+            <button type="submit" class="btn btn-round btn btn-info "><span><i class="icon-glass"></i></span> </button>
+            <button type="submit" class="btn btn-round btn-danger"><span><i class="icon-star"></i></span> </button>
+            <button type="submit" class="btn btn-round btn-primary"><span><i class="icon-film"></i></span> </button>
+            <button type="submit" class="btn btn-round btn-success"><span><i class="icon-cog"></i></span> </button>
+            <button type="submit" class="btn btn-round btn-inverse"><span><i class="icon-truck"></i></span> </button>
+            <button type="submit" class="btn btn-round btn-warning"><span><i class="icon-trash"></i></span> </button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body#mainBody{
+    background-image: url('../myImages/bg.jpg');
+}
+div.container, div.container-fluid{
+    background: #ffffff;
+}
+div#topImage{
+    height: 400px;
+    background-image: url('../myImages/himiya.jpg');
+}
+div.span4 h5{
+    text-align: center;
+}
+p, article ol li{
+    text-align: justify;
+}
+p#firstParagraph{
+    padding-left: 10px;
+}
+p#thirdParagraph{
+    padding-right: 10px;
+}
+#myCarousel{
+    margin-top: 42px;
+}
+#afterNavBar, #referat{
+    margin-top: 42px;
+}
+#chapter2, #chapter1{
+    padding-top: 42px;
+    margin-top: -42px;
+}
+div#btnGroupExample2{
+    padding-top: 50px;
+}
+div#btnGroupExample2 a{
+    width: 100px;
+    text-align: left;
+}
+

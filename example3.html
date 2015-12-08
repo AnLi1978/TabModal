@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Пример#3</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/add.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container-fluid" id="example2BodyCont">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <a class="brand" href="#"><i class="icon-th-list icon-white"></i>   Электронные таблицы</a>
+                <ul class="nav">
+                    <li class="divider-vertical"></li>
+                    <li><a href="index.html" title="Вернуться на главную">На главную</a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Содержание<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal">H Водород</a></li>
+                            <li><a href="#" data-toggle="modal">Li Литий</a></li>
+                            <li><a href="#" data-toggle="modal">Na Натрий</a></li>
+                            <li><a href="#" data-toggle="modal">K Калий</a></li>
+                            <li><a href="#" data-toggle="modal">Rb Рубидий</a></li>
+                            <li><a href="#" data-toggle="modal">Cs Цезий</a></li>
+                            <li><a href="#" data-toggle="modal">Fr Франций</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tabbable">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#panel1">Виды ЭТ</a></li>
+                <li><a data-toggle="tab" href="#panel2">MS Excel и его версии</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="panel1" class="tab-pane active">
+                    <h3>Виды электронных таблиц (ЭТ)</h3>
+                    <p> Электронные таблицы (ЭТ) представляют собой удобный инструмент для автоматизации вычислений.
+                        Многие расчёты, в частности в области бухгалтерского учёта, выполняются в табличной форме:
+                        балансы, расчётные ведомости, сметы расходов и т. п. Кроме того, решение численными методами целого
+                        ряда математических задач удобно выполнять именно в табличной форме. Использование математических
+                        формул в электронных таблицах позволяет представить взаимосвязь между различными параметрами
+                        некоторой реальной системы. Решения многих вычислительных задач, которые раньше можно было
+                        осуществить только с помощью программирования, стало возможно реализовать через математическое
+                        моделирование в электронной таблице.
+                    </p>
+                    <h5>Перечень программных продуктов</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Наименование ЭТ</th>
+                                    <th>UNIX</th>
+                                    <th>Mac Os</th>
+                                    <th>MS Windows</th>
+                                    <th>Примечание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GNumeric</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>Включена в пакет GNOME Office</td>
+                                </tr>
+                                <tr>
+                                    <td>KSpread</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>Включена в состав KOffice</td>
+                                </tr>
+                                <tr>
+                                    <td>Lotus 1-2-3</td>
+                                    <td>False</td>
+                                    <td>False</td>
+                                    <td>True</td>
+                                    <td>Впервые выпущена 29.01.1983 под DOS</td>
+                                </tr>
+                                <tr>
+                                    <td>Microsoft Excel</td>
+                                    <td>False</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>Впервые выпущена в 1985 году под DOS</td>
+                                </tr>
+                                <tr>
+                                    <td>Numbers</td>
+                                    <td>False</td>
+                                    <td>True</td>
+                                    <td>False</td>
+                                    <td>Входит в состав iWork</td>
+                                </tr>
+                                <tr>
+                                    <td>LibreOffice Calc </td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>Входит в состав LibreOffice</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn-success">OpenOffice Calc</button>
+                                    </td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>True</td>
+                                    <td>Входит в состав OpenOffice</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="panel2" class="tab-pane">
+                    <h3>MS Excel и его версии</h3>
+                    <p>
+                        MS Excel - программа для работы с электронными таблицами, созданная корпорацией Microsoft для
+                        Microsoft Windows, Windows NT и Mac OS. Она предоставляет возможности экономико-статистических
+                        расчетов, графические инструменты и, за исключением Excel 2008 под Mac OS X, язык
+                        макропрограммирования VBA (Visual Basic for Application). Microsoft Excel входит в состав
+                        Microsoft Office и на сегодняшний день Excel является одним из наиболее популярных
+                        приложений в мире.
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th>Год выпуска</th>
+                                <th>Версия</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1988 год</td>
+                                <td>Excel 2.0 для Windows</td>
+                            </tr>
+                            <tr>
+                                <td>1990 год</td>
+                                <td>Excel 3.0</td>
+                            </tr>
+                            <tr>
+                                <td>1992 год</td>
+                                <td>Excel 4.0</td>
+                            </tr>
+                            <tr>
+                                <td>1994 год</td>
+                                <td>Excel 5.0 (Office 4.2 и 4.3, также есть 32-битная версия только для Windows NT)</td>
+                            </tr>
+                            <tr>
+                                <td>1995 год</td>
+                                <td>Excel 7 для Windows 95 (включён в пакет Microsoft Office 95)</td>
+                            </tr>
+                            <tr>
+                                <td>1997 год</td>
+                                <td>Excel 97 (включён в пакет Microsoft Office 97)</td>
+                            </tr>
+                            <tr>
+                                <td>1999 год</td>
+                                <td>Excel 2000 (9) — Microsoft Office 2000</td>
+                            </tr>
+                            <tr>
+                                <td>2001 год</td>
+                                <td>Excel 2002 (10) — Microsoft Office XP</td>
+                            </tr>
+                            <tr>
+                                <td>2003 год</td>
+                                <td>Excel 2003 (11) — Microsoft Office 2003</td>
+                            </tr>
+                            <tr>
+                                <td>2007 год</td>
+                                <td>Excel 2007 (12) — Microsoft Office 2007</td>
+                            </tr>
+                            <tr>
+                                <td>2010 год</td>
+                                <td>Excel 2010 (14) — Microsoft Office 2010</td>
+                            </tr>
+                            <tr>
+                                <td>2013 год</td>
+                                <td>Excel 2013 (15) — Microsoft Office 2013</td>
+                            </tr>
+                            <tr>
+                                <td>2015 год</td>
+                                <td>Excel 2016 (16) — Microsoft Office 2016</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-group" id="btnGroupExample3">
+            <a class="btn btn-info" data-toggle="modal" href="Falgun/example3.html">То же самое с template Falgun</a>
+
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
